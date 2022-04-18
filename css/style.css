@@ -1,0 +1,37 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+div > button{
+    padding: 10px;
+    font-family:monospace;
+    font-weight: 900;
+    font-size: 1.2rem;
+    background-color:black;
+    color: white;
+    border: none;
+}
+div > p{
+    margin-top: 50px;
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 5px;
+}
+
+@media screen and (max-width: 480px){
+    body > div{
+        flex-direction: column-reverse;
+    }
+    div > p{
+        margin-bottom: 50px;
+        font-weight: 900;
+    }
+}
